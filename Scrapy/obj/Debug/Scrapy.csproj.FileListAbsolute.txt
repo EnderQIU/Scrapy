@@ -1,0 +1,15 @@
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\bin\Debug\Scrapy.exe.config
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\bin\Debug\Scrapy.exe
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\bin\Debug\Scrapy.pdb
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\bin\Debug\HtmlAgilityPack.dll
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\bin\Debug\HtmlAgilityPack.xml
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\obj\Debug\Scrapy.csprojResolveAssemblyReference.cache
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\obj\Debug\Scrapy.MainForm.resources
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\obj\Debug\Scrapy.Properties.Resources.resources
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\obj\Debug\Scrapy.csproj.GenerateResource.Cache
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\obj\Debug\Scrapy.csproj.CoreCompileInputs.cache
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\obj\Debug\Scrapy.exe
+C:\Users\EnderQIU\Source\Repos\Scrapy\Scrapy\obj\Debug\Scrapy.pdb
