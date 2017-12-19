@@ -52,9 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Events\OnCompletedEventArgs.cs" />
-    <Compile Include="Events\OnErrorEventArgs.cs" />
-    <Compile Include="Events\OnStartEventArgs.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,17 +60,9 @@
     </Compile>
     <Compile Include="Models\Job.cs" />
     <Compile Include="Models\JobManager.cs" />
-    <Compile Include="Models\JsonJob.cs" />
-    <Compile Include="Models\JsonObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScrapyManager.cs" />
-    <Compile Include="ScrapyThread.cs" />
-    <Compile Include="ScrapyThreadImpl.cs" />
-    <Compile Include="utils\BuildUrls.cs" />
     <Compile Include="utils\DBConnector.cs" />
-    <Compile Include="utils\HtmlParser.cs" />
-    <Compile Include="utils\JsonParser.cs" />
     <Compile Include="utils\Logger.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

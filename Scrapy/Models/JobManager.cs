@@ -11,18 +11,20 @@ namespace Scrapy.Models
     {
         private static List<Job> JobList = new List<Job>();
 
-        public static void AddJob(string[] info) {
-            if (info.Length != 7) {
+        public static void AddJob(string[] info)
+        {
+            if (info.Length != 7)
+            {
                 return;
             }
             JobList.Add(new Job(info));
             string values = "(";
-            for(int i = 0; i < 6; i++)
+            for (int i = 0; i < 6; i++)
             {
-                values += ("\""+info[i]+"\", ");
+                values += ("\"" + info[i] + "\", ");
             }
-            values += ("\""+info[6]+"\")");
-            DBConnector.Excute("insert into `"+Logger.GetMissionId().ToString()+ "` (JobName,Responsibility,Requirements,WorkPlace,CompanyName,Introduction,Uri) values"+values);
+            values += ("\"" + info[6] + "\")");
+            DBConnector.Excute("insert into `" + Logger.GetMissionId().ToString() + "` (JobName,Responsibility,Requirements,WorkPlace,CompanyName,Introduction,Uri) values" + values);
         }
     }
 }
