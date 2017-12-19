@@ -17,9 +17,5 @@ namespace Scrapy.utils
         {
             logger.Log(message);
         }
-        public static int GetMissionId()
-        {
-            return logger.GetMissionId();
-        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.MainProgressBar = new System.Windows.Forms.ProgressBar();
             this.ResultDataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +45,13 @@
             this.DeleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ResultDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // MainProgressBar
+            // 
+            this.MainProgressBar.Location = new System.Drawing.Point(12, 226);
+            this.MainProgressBar.Name = "MainProgressBar";
+            this.MainProgressBar.Size = new System.Drawing.Size(836, 23);
+            this.MainProgressBar.TabIndex = 0;
             // 
             // ResultDataGridView
             // 
@@ -169,6 +177,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.ConsoleTextBox);
             this.Controls.Add(this.ResultDataGridView);
+            this.Controls.Add(this.MainProgressBar);
             this.Name = "MainForm";
             this.Text = "牛客网";
             ((System.ComponentModel.ISupportInitialize)(this.ResultDataGridView)).EndInit();
@@ -178,6 +187,8 @@
         }
 
         #endregion
+
+        public System.Windows.Forms.ProgressBar MainProgressBar;
         private System.Windows.Forms.DataGridView ResultDataGridView;
         public System.Windows.Forms.TextBox ConsoleTextBox;
         private System.Windows.Forms.Label label7;

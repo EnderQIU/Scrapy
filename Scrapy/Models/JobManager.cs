@@ -11,6 +11,11 @@ namespace Scrapy.Models
     {
         private static List<Job> JobList = new List<Job>();
 
+        public static List<Job> GetJobs()
+        {
+            return JobList;
+        }
+
         public static void AddJob(string[] info)
         {
             if (info.Length != 7)
