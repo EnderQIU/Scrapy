@@ -29,7 +29,7 @@ namespace Scrapy.Models
                 values += ("\"" + info[i] + "\", ");
             }
             values += ("\"" + info[6] + "\")");
-            DBConnector.Excute("insert into `" + Logger.GetMissionId().ToString() + "` (JobName,Responsibility,Requirements,WorkPlace,CompanyName,Introduction,Uri) values" + values);
+        //    DBConnector.Excute("insert into `" + Logger.GetMissionId().ToString() + "` (JobName,Responsibility,Requirements,WorkPlace,CompanyName,Introduction,Uri) values" + values);
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HtmlAgilityPack;
+using Scrapy.utils;
 
 namespace Scrapy
 {
@@ -15,6 +16,8 @@ namespace Scrapy
         [STAThread]
         static void Main()
         {
+            FileHandler fileHandler = new FileHandler();
+            fileHandler.getJobs();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

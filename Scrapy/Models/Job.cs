@@ -15,8 +15,8 @@ namespace Scrapy.Models
             this.Responsibility = info[1];
             this.Requirements = info[2];
             this.WorkPlace = info[3];
-            this.CompanyName = info[4];
-            this.Introduction = info[5];
+            this.CompanyName = info[5];
+            this.Introduction = info[4];
             this.Uri = info[6];
             this.Tags = new int[Presets.keywords.Length];
         }

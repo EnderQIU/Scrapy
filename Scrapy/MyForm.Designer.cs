@@ -49,26 +49,30 @@
             "深圳",
             "上海",
             "广州"});
-            this.checkedListBox1.Location = new System.Drawing.Point(12, 34);
+            this.checkedListBox1.Location = new System.Drawing.Point(16, 42);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 276);
+            this.checkedListBox1.Size = new System.Drawing.Size(159, 344);
             this.checkedListBox1.TabIndex = 0;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 19);
+            this.label1.Location = new System.Drawing.Point(16, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 12);
+            this.label1.Size = new System.Drawing.Size(142, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "你理想的工作地是？";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 19);
+            this.label2.Location = new System.Drawing.Point(181, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 12);
+            this.label2.Size = new System.Drawing.Size(142, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "你掌握哪些语言咩？";
             // 
@@ -88,17 +92,19 @@
             "go",
             "ruby",
             "swift"});
-            this.checkedListBox2.Location = new System.Drawing.Point(138, 34);
+            this.checkedListBox2.Location = new System.Drawing.Point(184, 42);
+            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(120, 276);
+            this.checkedListBox2.Size = new System.Drawing.Size(159, 344);
             this.checkedListBox2.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(265, 19);
+            this.label3.Location = new System.Drawing.Point(353, 24);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 12);
+            this.label3.Size = new System.Drawing.Size(172, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "常用的开发平台是神马？";
             // 
@@ -111,17 +117,19 @@
             "linux",
             "ios",
             "android"});
-            this.checkedListBox3.Location = new System.Drawing.Point(264, 34);
+            this.checkedListBox3.Location = new System.Drawing.Point(352, 42);
+            this.checkedListBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(120, 276);
+            this.checkedListBox3.Size = new System.Drawing.Size(159, 344);
             this.checkedListBox3.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(389, 19);
+            this.label4.Location = new System.Drawing.Point(519, 24);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 12);
+            this.label4.Size = new System.Drawing.Size(172, 15);
             this.label4.TabIndex = 7;
             this.label4.Text = "希望向那个方向发展呢？";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -138,18 +146,20 @@
             "大数据",
             "机器学习",
             "自然语言"});
-            this.checkedListBox4.Location = new System.Drawing.Point(390, 34);
+            this.checkedListBox4.Location = new System.Drawing.Point(520, 42);
+            this.checkedListBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(120, 276);
+            this.checkedListBox4.Size = new System.Drawing.Size(159, 344);
             this.checkedListBox4.TabIndex = 6;
             this.checkedListBox4.SelectedIndexChanged += new System.EventHandler(this.checkedListBox4_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(514, 19);
+            this.label5.Location = new System.Drawing.Point(685, 24);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 12);
+            this.label5.Size = new System.Drawing.Size(127, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "掌握哪些框架呀？";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -169,18 +179,20 @@
             "angular",
             "vue",
             "sass"});
-            this.checkedListBox5.Location = new System.Drawing.Point(516, 34);
+            this.checkedListBox5.Location = new System.Drawing.Point(688, 42);
+            this.checkedListBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(120, 276);
+            this.checkedListBox5.Size = new System.Drawing.Size(159, 344);
             this.checkedListBox5.TabIndex = 8;
             this.checkedListBox5.SelectedIndexChanged += new System.EventHandler(this.checkedListBox5_SelectedIndexChanged);
             // 
             // SubmitButton
             // 
             this.SubmitButton.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.SubmitButton.Location = new System.Drawing.Point(653, 287);
+            this.SubmitButton.Location = new System.Drawing.Point(871, 359);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(75, 23);
+            this.SubmitButton.Size = new System.Drawing.Size(100, 29);
             this.SubmitButton.TabIndex = 10;
             this.SubmitButton.Text = "提交";
             this.SubmitButton.UseVisualStyleBackColor = true;
@@ -188,9 +200,9 @@
             // 
             // MyForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 328);
+            this.ClientSize = new System.Drawing.Size(988, 410);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.checkedListBox5);
@@ -202,6 +214,7 @@
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkedListBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MyForm";
             this.Text = "Form";
             this.ResumeLayout(false);
