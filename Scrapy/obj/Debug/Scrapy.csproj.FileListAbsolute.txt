@@ -28,3 +28,11 @@ E:\Scrapy\Scrapy\bin\Debug\HtmlAgilityPack.pdb
 E:\Scrapy\Scrapy\bin\Debug\HtmlAgilityPack.xml
 E:\Scrapy\Scrapy\bin\Debug\Newtonsoft.Json.xml
 E:\Scrapy\Scrapy\obj\Debug\Scrapy.exe
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.csprojResolveAssemblyReference.cache
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.MainForm.resources
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.MyForm.resources
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.Properties.Resources.resources
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.csproj.GenerateResource.Cache
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.csproj.CoreCompileInputs.cache
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.exe
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.pdb
