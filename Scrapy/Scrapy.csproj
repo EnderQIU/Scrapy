@@ -54,6 +54,12 @@
   <ItemGroup>
     <Compile Include="Analyzer\JobAnalyzer.cs" />
     <Compile Include="Analyzer\Presets.cs" />
+    <Compile Include="DisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayForm.designer.cs">
+      <DependentUpon>DisplayForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,9 +76,18 @@
     <Compile Include="Models\JobManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resultForm.Designer.cs">
+      <DependentUpon>resultForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="utils\DBConnector.cs" />
     <Compile Include="utils\FileHandler.cs" />
     <Compile Include="utils\Logger.cs" />
+    <EmbeddedResource Include="DisplayForm.resx">
+      <DependentUpon>DisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +103,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="resultForm.resx">
+      <DependentUpon>resultForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Scrapy.utils;
 using System.Diagnostics;
+using System.Threading;
 
 namespace Scrapy
 {
@@ -81,5 +82,20 @@ namespace Scrapy
             SaveSelector.SelectedItem = "";
         }
 
+        private void infoDisplay_Click(object sender, EventArgs e)
+        {
+            new Thread((ThreadStart)delegate
+            {
+                Application.Run(new DisplayForm());
+            }).Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Thread((ThreadStart)delegate
+            {
+                Application.Run(new MyForm());
+            }).Start();
+        }
     }
 }

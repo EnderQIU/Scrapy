@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MainProgressBar = new System.Windows.Forms.ProgressBar();
             this.ResultDataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,15 +42,10 @@
             this.SaveSelector = new System.Windows.Forms.ComboBox();
             this.LoadButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.infoDisplay = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ResultDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // MainProgressBar
-            // 
-            this.MainProgressBar.Location = new System.Drawing.Point(12, 226);
-            this.MainProgressBar.Name = "MainProgressBar";
-            this.MainProgressBar.Size = new System.Drawing.Size(836, 23);
-            this.MainProgressBar.TabIndex = 0;
             // 
             // ResultDataGridView
             // 
@@ -64,10 +58,11 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.ResultDataGridView.Location = new System.Drawing.Point(12, 255);
+            this.ResultDataGridView.Location = new System.Drawing.Point(16, 318);
+            this.ResultDataGridView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ResultDataGridView.Name = "ResultDataGridView";
             this.ResultDataGridView.RowTemplate.Height = 23;
-            this.ResultDataGridView.Size = new System.Drawing.Size(836, 333);
+            this.ResultDataGridView.Size = new System.Drawing.Size(1115, 417);
             this.ResultDataGridView.TabIndex = 1;
             // 
             // Column1
@@ -108,21 +103,23 @@
             // 
             // ConsoleTextBox
             // 
-            this.ConsoleTextBox.Location = new System.Drawing.Point(304, 27);
+            this.ConsoleTextBox.Location = new System.Drawing.Point(405, 33);
+            this.ConsoleTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ConsoleTextBox.Multiline = true;
             this.ConsoleTextBox.Name = "ConsoleTextBox";
             this.ConsoleTextBox.ReadOnly = true;
             this.ConsoleTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ConsoleTextBox.Size = new System.Drawing.Size(544, 193);
+            this.ConsoleTextBox.Size = new System.Drawing.Size(724, 241);
             this.ConsoleTextBox.TabIndex = 3;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(12, 140);
+            this.label7.Location = new System.Drawing.Point(16, 175);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 16);
+            this.label7.Size = new System.Drawing.Size(109, 20);
             this.label7.TabIndex = 14;
             this.label7.Text = "读取与保存";
             // 
@@ -130,26 +127,29 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(12, 164);
+            this.label8.Location = new System.Drawing.Point(16, 205);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 12);
+            this.label8.Size = new System.Drawing.Size(67, 15);
             this.label8.TabIndex = 15;
             this.label8.Text = "选择存档";
             // 
             // SaveSelector
             // 
             this.SaveSelector.FormattingEnabled = true;
-            this.SaveSelector.Location = new System.Drawing.Point(89, 162);
+            this.SaveSelector.Location = new System.Drawing.Point(119, 202);
+            this.SaveSelector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveSelector.Name = "SaveSelector";
-            this.SaveSelector.Size = new System.Drawing.Size(121, 20);
+            this.SaveSelector.Size = new System.Drawing.Size(160, 23);
             this.SaveSelector.TabIndex = 16;
             this.SaveSelector.DropDown += new System.EventHandler(this.DropDownOpened);
             // 
             // LoadButton
             // 
-            this.LoadButton.Location = new System.Drawing.Point(223, 161);
+            this.LoadButton.Location = new System.Drawing.Point(297, 202);
+            this.LoadButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.LoadButton.Name = "LoadButton";
-            this.LoadButton.Size = new System.Drawing.Size(75, 23);
+            this.LoadButton.Size = new System.Drawing.Size(100, 28);
             this.LoadButton.TabIndex = 17;
             this.LoadButton.Text = "读取";
             this.LoadButton.UseVisualStyleBackColor = true;
@@ -157,19 +157,43 @@
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(223, 197);
+            this.DeleteButton.Location = new System.Drawing.Point(297, 247);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.Size = new System.Drawing.Size(100, 28);
             this.DeleteButton.TabIndex = 18;
             this.DeleteButton.Text = "删除";
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButtonClicked);
             // 
+            // infoDisplay
+            // 
+            this.infoDisplay.Location = new System.Drawing.Point(20, 247);
+            this.infoDisplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.infoDisplay.Name = "infoDisplay";
+            this.infoDisplay.Size = new System.Drawing.Size(260, 28);
+            this.infoDisplay.TabIndex = 19;
+            this.infoDisplay.Text = "信息展示";
+            this.infoDisplay.UseVisualStyleBackColor = true;
+            this.infoDisplay.Click += new System.EventHandler(this.infoDisplay_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(224, 98);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "问卷";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 600);
+            this.ClientSize = new System.Drawing.Size(1147, 750);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.infoDisplay);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.SaveSelector);
@@ -177,7 +201,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.ConsoleTextBox);
             this.Controls.Add(this.ResultDataGridView);
-            this.Controls.Add(this.MainProgressBar);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "MainForm";
             this.Text = "牛客网";
             ((System.ComponentModel.ISupportInitialize)(this.ResultDataGridView)).EndInit();
@@ -187,8 +211,6 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.ProgressBar MainProgressBar;
         private System.Windows.Forms.DataGridView ResultDataGridView;
         public System.Windows.Forms.TextBox ConsoleTextBox;
         private System.Windows.Forms.Label label7;
@@ -203,6 +225,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.Button infoDisplay;
+        private System.Windows.Forms.Button button1;
     }
 }
 

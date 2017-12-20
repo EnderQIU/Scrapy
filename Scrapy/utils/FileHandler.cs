@@ -19,13 +19,18 @@ namespace Scrapy.utils
             bool mark = false;
             while ((line = sr.ReadLine()) != null)
             {
-                if (line.Contains("公司简介"))
+                if (line.Contains("工作简介"))
                 {
+                    
+                    if(line== "工作简介：")//排除一种让人头大的换行
+                    {
+                        line = line + sr.ReadLine();
+                    }
                     queue.Enqueue(line);
                     do
                     {
                         temp = sr.ReadLine();
-                    } while (!temp.Contains("公司名称"));
+                    } while (!temp.Contains("工作网址"));
                     mark = true;
                 }
                 if (mark == false)
@@ -38,9 +43,9 @@ namespace Scrapy.utils
                     mark = false;
                 }
             }
-            Job[] jobs = new Job[1000];
+            Job[] jobs = new Job[700];
             int i = 0;
-            while(i<1000)
+            while(i<700)
             {
                 String[] job = new String[7];
                 for(int j=0;j<7;j++)

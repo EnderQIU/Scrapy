@@ -44,3 +44,5 @@ G:\C#_project\Scrapy\Scrapy\bin\Debug\Newtonsoft.Json.dll
 G:\C#_project\Scrapy\Scrapy\bin\Debug\HtmlAgilityPack.pdb
 G:\C#_project\Scrapy\Scrapy\bin\Debug\HtmlAgilityPack.xml
 G:\C#_project\Scrapy\Scrapy\bin\Debug\Newtonsoft.Json.xml
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.resultForm.resources
+G:\C#_project\Scrapy\Scrapy\obj\Debug\Scrapy.DisplayForm.resources

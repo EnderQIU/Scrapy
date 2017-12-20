@@ -15,8 +15,8 @@ namespace Scrapy.Models
             this.Responsibility = info[1];
             this.Requirements = info[2];
             this.WorkPlace = info[3];
-            this.CompanyName = info[5];
-            this.Introduction = info[4];
+            this.CompanyName = info[4];
+            this.Introduction = info[5];
             this.Uri = info[6];
             this.Tags = new int[Presets.keywords.Length];
         }
@@ -47,5 +47,18 @@ namespace Scrapy.Models
             return this.JobName + this.JobName + this.Responsibility + this.Requirements
                 + this.WorkPlace + this.CompanyName + this.Introduction;
         }
+        public string[] GetInfoAsList()
+        {
+            string[] result = new string[7];
+            result[0] = this.JobName;
+            result[1] = this.JobName;
+            result[2] = this.Responsibility;
+            result[3] = this.Requirements;
+            result[4] = this.WorkPlace;
+            result[5] = this.CompanyName;
+            result[6] = this.Introduction;
+            return result;
+        }
+
     }
 }
